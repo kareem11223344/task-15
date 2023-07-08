@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+      @font-face {
+      font-family: Alexandria;
+      src: url("fonts/Alexandria-VariableFont_wght.ttf");
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+          font-family: Alexandria;    
+          direction: rtl;
+          height: 100vh;
+      }
+      .fixed-back{
+        height: 82px;
+        border-radius: 15px;
+        flex-shrink: 0;
+        background: #FFF;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 0px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 6px 0px rgba(0, 0, 0, 0.09), 0px 0px 8px 0px rgba(0, 0, 0, 0.05), 0px 0px 9px 0px rgba(0, 0, 0, 0.01), 0px 0px 10px 0px rgba(0, 0, 0, 0.00);
+      }
+      .fixed-back img{  
+        margin-top: 40px;
+        margin-left: 20px;
+      }
+      .text-center{
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .text-center h6{
+        text-align: right;
+      }
+      .mt-2{
+        display: flex;
+        justify-content: space-between;
+      }
+      .mt-2 .active{
+        color: #000;
+        text-align: right;
+        font-family: Alexandria;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        border-radius: 100px;
+        border: 1px solid #EE8454;
+        background-color: #EE8454;
+        text-align: center;
+        color: #ffffff;
+      }
+      .mt-2 span{
+        width: 123px;
+        height: 40px;
+        border-radius: 30px;
+        border-radius: 100px;
+        border: 1px solid rgba(15, 15, 15, 0.30);
+        background-color: rgba(238, 132, 84, 0.00);
+        color: rgba(15, 15, 15, 0.50);
+        font-family: Alexandria;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+        margin-top: 20px;
+      }
+      .salary{
+        display: flex;
+        justify-content: space-between;
+        direction: rtl;
+        margin-top: 30px;
+    }
+    .salary p{
+      color: #000;
+      text-align: right;
+      font-family: Alexandria;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0px;
+    }
+    .salary h6{
+      color: #3378FA;
+      text-align: right;
+      font-family: Alexandria;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0px;
+    }
+    .btns{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 320px;
+    }
+    .btns button{
+      width: 170px;
+      height: 50px;
+      border-radius: 170px;
+      
+      border: none;
+      color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+    <div class="fixed-back" style="text-align: left">
+        <a href=""><img src="images/solar_square-arrow-left-broken.png" alt=""></a>
+    </div>
+    <div class="wrapper" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="title text-center">
+                  <h6>نوع الشّعر</h6>
+                  <div class="title mt-2">
+                    <span class="active">الشعر الغنائي</span>
+                    <span>الشّعر الملحمي</span>
+                    <span>الشعر الحرّ</span>
+                </div>
+            </div>
+            <header class="salary">
+              <p>السعر</p>
+              <h6 class="sall">100ريال - 5000 ريال</h6>
+            </header>
+            <!-- <label for="disabledRange" class="form-label">Disabled range</label> -->
+            <input type="range" class="form-range" id="disabledRange" style=" height: 10px;">
+            <div class="title text-center">
+              <h6>التقييم</h6>
+              <div class="title mt-2">
+                <span class="active">الاعلى تقييم</span>
+                <span>تقييم متوسط</span>
+                <span>بدون تقييم</span>
+            </div>
+            <div class="btns">
+              <button style="background-color: #EE8454;">اعرض النتائج</button>
+              <button style="background-color: #3378FA;">اعادة الضبط</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+</body>
+</html>
